@@ -12,12 +12,3 @@
 4. `$ npm run db:seed`
 5. `$ npm run dev:start`
 
-
-Plan
-create script.js file in public folder
-attach to view
-
-write ajax function using fetch
-get value from the input
-get pet id ? how?
-send it to db
