@@ -11,7 +11,7 @@ const db = pgp(connection)
  * @return {Promise} - resolves to array of objects, each with keys 'name' and 'species_name'
  */
 const getPetsAndSpecies = () => {
-  const query = `SELECT p.name, s.species_name
+  const query = `SELECT p.pet_id, p.name, s.species_name
                   FROM pets AS p
                   JOIN species AS s
                     ON s.species_id = p.species_id

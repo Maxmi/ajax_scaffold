@@ -11,5 +11,9 @@ html
       each pet in pets
         tr
           td
-            input(class='pet-name', value=pet.name)
+            input(class='pet-name', value=pet.name, name='newName', data-petID=pet.pet_id)
           td= pet.species_name
+    
+    div#message
+          
+    script(src='/js/script.js')
