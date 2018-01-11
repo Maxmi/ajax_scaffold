@@ -11,4 +11,3 @@
 3. `$ npm run db:create`
 4. `$ npm run db:seed`
 5. `$ npm run dev:start`
-

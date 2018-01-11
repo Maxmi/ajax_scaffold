@@ -22,10 +22,10 @@ app.get('/', (req, res) => {
 
 app.put('/pets/:petID/update_name', (req, res) => {
   const { petID } = req.params;
-  const { petName } = req.body;
+  const { newName } = req.body;
 
-  updatePetName(petID, petName)
-    .then(pet => {
+  updatePetName(petID, newName)
+    .then((pet) => {
       res.json(pet)
     })
     .catch(console.error)
